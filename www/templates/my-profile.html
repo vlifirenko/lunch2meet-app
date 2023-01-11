@@ -1,0 +1,47 @@
+<ion-view title="Профиль">
+  <ion-content class="profile my-profile">
+  <div class="avatar">
+  <img src="img/ionic.png" />
+  <h1>Матвей Пашковский</h1>
+  </div>
+    <label class="item item-input">
+      <textarea rows="3">Инженер-программист, умею организовывать разработку</textarea>
+    </label>
+  <div class="item">
+  Время обеда
+  <div class="right">
+    <select>
+      <option ng-repeat="n in [] | range:24">{{n}}</option>
+    </select>
+    :
+    <select>
+      <option ng-repeat="n in [] | range:60">{{n}}</option>
+    </select>
+  </div>
+  </div>
+  <div class="item">
+  Готов к обеду за
+  <div class="right">
+    <select>
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+    </select>
+    мин
+  </div>
+  </div>
+  <div class="cell">
+  <br/>
+    <h3 class="center">Мои профили в соц. сетях</h3>
+  </div>
+  <div class="list">
+    <a class="item item-icon-right" href="#">ВКонтакте <i class="icon ion-trash-a"></i></a>
+    <a class="item item-icon-right" href="#">Добавить профиль <i class="icon ion-plus-round"></i></a>
+  </div>
+  
+  <div class="padding">
+  <button class="button button-block button-stable" ng-click="save()">Сохранить</button>
+  </div>
+  
+  </ion-content>
+</ion-view>

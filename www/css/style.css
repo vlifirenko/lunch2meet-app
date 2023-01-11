@@ -1,0 +1,170 @@
+.center {
+	text-align: center;
+}
+
+hr {
+	height: 1px;
+	background-color: #ddd;
+	border: 0;
+}
+
+.login-page {
+	text-align: center;
+}
+
+.login-page button {
+	margin: 10px 0;
+}
+
+.profile .avatar {
+	text-align: center;
+	padding: 30px 0 10px 0;
+}
+
+.profile .cell {
+	border-top: 1px solid #ccc;
+	padding: 10px 20px;
+	clear: both;
+}
+
+.left {
+	float: left;
+	width: 70%;
+}
+
+.right {
+	float: right;
+	width: 30%;
+	text-align: right;
+}
+
+.bar-header .badge {
+	position: absolute;
+	left: -6px;
+	bottom: 0;
+	top: 9px;
+	font-size: 11px;
+	height: 20px;
+	line-height: 14px;
+}
+
+.peoples ion-tabs {
+	top: 45px;
+}
+
+.peoples ion-tabs .tabs {
+	background: transparent;
+	border-top: none;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+}
+
+.peoples ion-tabs .tabs .tab-item-active {
+	border-bottom: 3px solid #666;
+}
+
+.peoples ion-tabs .pane {
+	
+}
+
+.peoples ion-tabs .pane .item div {
+	float:left;
+	white-space: normal !important;
+}
+
+.peoples ion-tabs .pane .item .avatar {
+	width: 20%;
+}
+
+.peoples ion-tabs .pane .item .name {
+	width: 60%;
+}
+
+.peoples ion-tabs .pane .item .name span {
+	font-size: 14px;
+}
+
+.peoples ion-tabs .pane .item .distance {
+	width: 20%;
+	text-align: right;
+	font-size: 14px;
+}
+
+ion-tabs .pane .item .special {
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+ion-tabs .pane .item .special span {
+	font-size: 14px;
+}
+
+.show-profile .avatar {
+	text-align: center;
+}
+
+.messages .item {
+	border: none;
+}
+
+.messages .item-input-wrapper {
+	background: none !important;
+}
+
+.messages .message {
+	width: 90%;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	padding: 10px;
+	white-space: normal;
+}
+
+.messages .message .date {
+	margin-top: 10px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.messages .message.my-message {
+	float: right;
+}
+
+.messages .adv {
+	margin: 10px;
+	margin-left: 50px;
+}
+
+.rotate {
+	float: left;
+	margin-top: 32px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.my-profile select, .profile select {
+	display: inline;
+}
+
+.my-profile .item i, .profile .item i {
+	float: right;
+	color: #000;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}

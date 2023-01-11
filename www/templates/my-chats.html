@@ -1,0 +1,13 @@
+<ion-view title="Мои чаты">
+  <ion-content class="peoples">	
+    <ion-list class="has-header">
+		<ion-item ng-click="" class="item" ng-repeat="item in messages" href="#/messages/{{item.user.id}}">
+			{{item.user.name}} <span class="badge badge-assertive">1</span>
+		</ion-item>
+	</ion-list>
+  
+  </ion-content>
+    <div class="bar bar-footer bar-stable">
+		<div class="title">Реклама</div>
+	</div>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-view title="Место">
+  <ion-content class="show-profile has-header">
+  	<div class="avatar">
+  		<br/>
+		<img src="img/ionic.png" />
+		<h1>{{place.name}}</h1>
+		<h4>Бизнес-ланч: {{place.businessLunch}} ({{place.businessLunchTime}})</h4>
+		<h4>Средний чек: {{place.averageCheck}}</h4>
+		<br/>
+
+		<hr ng-show="place.specialHeader!=''" />
+		<div ng-show="place.specialHeader!=''" class="special">
+			<h3>{{place.specialHeader}}</h3>
+			<p>{{place.specialText}}</p>
+		</div>
+		<hr>
+		<h4>{{place.address}}</h4>
+		<h4><a href="{{place.link}}">{{place.link}}</a></h4>
+		<div id="map"></div>
+		<!--<a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>-->
+  	</div>
+
+  </ion-content>
+
+   <div class="bar bar-footer bar-stable">
+		<div class="title">Реклама</div>
+   </div>
+
+</ion-view>

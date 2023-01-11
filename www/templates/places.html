@@ -1,0 +1,45 @@
+<ion-view title="Места рядом">
+  <ion-content class="peoples">
+  <ion-tabs class="tabs-positive tabs-icon-only has-header">
+
+	  <ion-tab title="Списком">
+	   <ion-list>
+			<ion-item ng-click="" class="item" ng-repeat="item in places" href="#/show-place/{{item.place.id}}">
+				<div class="avatar">
+					<img src="img/ionic.png" width="50" height="50" />
+				</div>
+				<div class="name">
+					{{item.place.name}}
+					<br/>
+					<span>Бизнес-ланч: {{item.place.businessLunch}}</span>
+					<br/>
+					<span>Средний чек: {{item.place.averageCheck}}</span>
+				</div>
+				<div class="distance">
+					<i ng-show="item.favorite" class="icon ion-ios7-star"></i>
+					<i ng-show="!item.favorite" class="icon ion-ios7-star-outline"></i>
+					<br/>
+					{{item.place.distance}}
+				</div>
+				<div ng-show="item.specialHeader!=''" class="special">
+					{{item.place.specialHeader}}
+					<br/>
+					<span>{{item.place.specialText}}</span>
+				</div>
+			</ion-item>
+		</ion-list>
+		
+	  </ion-tab>
+
+	  <ion-tab title="На карте" on-select="tabRefresh()">
+	  	<br />
+	  	<div id="map"></div>
+	  </ion-tab>
+
+   </ion-tabs>
+  
+  </ion-content>
+    <div class="bar bar-footer bar-stable">
+		<div class="title">Реклама</div>
+	</div>
+</ion-view>

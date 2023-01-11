@@ -1,0 +1,28 @@
+<ion-view title="Профиль">
+  <ion-content class="show-profile has-header padding">
+  	<div class="avatar">
+		<img src="img/ionic.png" />
+		<h1>{{profile.name}}</h1>
+		<h3>{{profile.profession}}</h3>
+		<h4>{{profile.time}}</h4>
+		<br/>
+		<h3>Мои профили в соц. сетях</h3>
+
+		<ion-list>
+			<ion-item ng-click="" class="item">
+				ВКонтакте
+			</ion-item>
+			<ion-item ng-click="" class="item">
+				Google+
+			</ion-item>
+		</ion-list>
+  	</div>
+
+  </ion-content>
+
+   <div class="bar bar-footer bar-stable">
+		<div class="title"></div>
+		<button class="button button-clear button-positive" ng-click="sendMessage()">Написать сообщение</button>
+   </div>
+
+</ion-view>
